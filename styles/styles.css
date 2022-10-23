@@ -580,6 +580,9 @@ p {
   cursor: pointer;
   top: 8px;
   right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   padding: 6px 6px;
