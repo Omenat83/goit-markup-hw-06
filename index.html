@@ -39,7 +39,6 @@
           </svg>
           +38 096 111 11 11</a>
       </div>
-
     </div>
   </header>
   <main>
@@ -302,53 +301,71 @@
 
   <footer class="footer">
     <div class="container footer-main">
-      <div>
-        <a href="./index.html" class="link make-block"><span class="logo-web">Web</span><span
-            class="logo-studio">Studio</span></a>
-        <address class="contacts">
-          <ul class="list contacts-list">
-            <li><a href="" class="link footer-contacts">м. Київ, пр-т Лесі Українки, 26</a></li>
+      <div class="footer-main-left">
+        <div>
+          <a href="./index.html" class="link make-block"><span class="logo-web">Web</span><span
+              class="logo-studio">Studio</span></a>
+          <address class="contacts">
+            <ul class="list contacts-list">
+              <li><a href="" class="link footer-contacts">м. Київ, пр-т Лесі Українки, 26</a></li>
+              <li>
+                <a href="mailto:info@devstudio.com"
+                  class="link footer-contacts footer-transparent">info@devstudio.com</a>
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="link footer-contacts footer-transparent">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-soc">
+          <p class="footer-soc-title">ПРИєднуйтесь</p>
+          <ul class="footer-soc-main list">
             <li>
-              <a href="mailto:info@devstudio.com" class="link footer-contacts footer-transparent">info@devstudio.com</a>
+              <a class="footer-soc-item" href="">
+                <svg class="" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="tel:+380961111111" class="link footer-contacts footer-transparent">+38 096 111 11 11</a>
+              <a class="footer-soc-item" href="">
+                <svg class="" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-soc-item" href="">
+                <svg class="" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-soc-item" href="">
+                <svg class="" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
-      <div class="footer-soc">
-        <p class="footer-soc-title">ПРИєднуйтесь</p>
-        <ul class="footer-soc-main list">
-          <li>
-            <a class="footer-soc-item" href="">
-              <svg class="" width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="footer-soc-item" href="">
-              <svg class="" width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="footer-soc-item" href="">
-              <svg class="" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="footer-soc-item" href="">
-              <svg class="" width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+
+      <div class="footer-main-right">
+        <form>
+          <label>
+            <span class="footer-soc-title">підпишіться на розсилку</span>
+            <input class="footer-form-email" type="email" name="user-email-spam" placeholder="E-mail" required>
+          </label>
+          <button class="button order-button active button-plane" type="submit">Підписатися
+            <svg class="" width="24" height="24">
+              <use href="./images/icons.svg#icon-plane"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </footer>
@@ -408,8 +425,7 @@
           Погоджуюся з розсилкою та приймаю
           <a href="#" class="modal-policy">Умови договору</a>
         </label>
-
-        <button class="button order-button active" type="submit">Відправити</button>
+        <button class="button order-button active" type="submit"></button>
       </form>
     </div>
   </div>

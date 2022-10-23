@@ -538,6 +538,9 @@ p {
 }
 /* ---------------------------кнопки----------- */
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--title-color);
   font-size: 16px;
   cursor: pointer;
@@ -545,6 +548,7 @@ p {
   border-radius: 4px;
   border: 0 transparent;
   padding: 6px 22px;
+  margin: 0;
   transition: color var(--trans-general), background-color var(--trans-general),
     box-shadow var(--trans-general);
 }
@@ -558,6 +562,7 @@ p {
 }
 .button.order-button {
   min-width: 200px;
+  min-height: 50px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   line-height: 1.87;
@@ -586,6 +591,13 @@ p {
 .button-close:focus {
   fill: var(--main-color-decor);
 }
+.button-plane {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  fill: var(--basic-white);
+  gap: 10px;
+}
 /* ---------------------------підвал---------- */
 .footer {
   background-color: var(--bckrg-grey);
@@ -594,21 +606,31 @@ p {
 footer .logo-studio {
   color: var(--basic-white);
 }
-.footer-main {
+.footer-main-left {
   display: flex;
   gap: 70px;
   align-items: baseline;
 }
+.footer-main-left > div {
+  width: 231px;
+}
+.footer-main-left > div.footer-soc {
+  width: 206px;
+}
 .footer-main a.make-block {
   margin-bottom: 20px;
 }
-/* .footer-soc {
-} */
+.footer-main {
+  display: flex;
+  gap: 93px;
+  align-items: baseline;
+}
 .footer-soc-main {
   display: flex;
   gap: 10px;
 }
 .footer-soc-title {
+  display: inline-block;
   text-transform: uppercase;
   color: var(--basic-white);
   font-weight: 700;
@@ -652,4 +674,20 @@ footer .logo-studio {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--main-color-decor);
+}
+.footer-main-right {
+  display: flex;
+  position: relative;
+}
+.footer-form-email {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  /* margin-right: 12px; */
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--bckrg-grey);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
 }
